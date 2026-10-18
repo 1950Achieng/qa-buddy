@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QA Buddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<h1>QA Buddy 🧪</h1>
+<p>Your simple software testing assistant.</p>
+
+<div class="container">
+    <h2>Add a Test Case</h2>
+
+    <label for="testName">Test case name</label>
+    <input id="testName" type="text" placeholder="e.g. Login test">
+
+    <label for="expected">Expected result</label>
+    <input id="expected" type="text" placeholder="e.g. User logs in">
+
+    <label for="status">Test status</label>
+    <select id="status">
+        <option value="Passed">Passed</option>
+        <option value="Failed">Failed</option>
+    </select>
+
+    <button onclick="addTestCase()">Add Test Case</button>
+    
+<div class="stats">
+    <div class="stat-card">
+        <h3 id="totalTests">0</h3>
+        <p>Total Tests</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="passedTests">0</h3>
+        <p>Passed</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="failedTests">0</h3>
+        <p>Failed</p>
+    </div>
+</div>
+
+<div id="testList"></div>
+
+</div>
+>
+<script src="script.js"></script>
+</body>
+</html>

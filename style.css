@@ -1,0 +1,109 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #222;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #6c63ff;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    background: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#testList {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.test-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border-left: 5px solid #6c63ff;
+    text-align: left;
+}
+
+.test-card h3 {
+    margin-top: 0;
+    color: #6c63ff;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+.stat-card {
+    background: white;
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.stat-card h3 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.test-card.passed {
+    border-left-color: #22a06b;
+}
+
+.test-card.failed {
+    border-left-color: #de350b;
+}
+
+.delete-btn {
+    background: #de350b;
+    width: auto;
+    padding: 8px 16px;
+    margin-top: 10px;
+}
